@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="uz"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>MAKHMUDOV NEXUS PRO</title>
+<link rel="stylesheet" href="style.css"></head><body>
+
+<div id="login"><form class="card" id="lf"><div class="ic">✦</div><div class="eyebrow">SECURE WORKSPACE · V2.0</div><h2 style="margin:6px 0 2px">MAKHMUDOV NEXUS PRO</h2><p class="sm" style="margin:0 0 6px">Hisoblashning yangi avlodi. Shaxsiy ish maydoningizga kiring.</p>
+<label style="text-align:left">Login</label><input id="lu" autocomplete="username" autocapitalize="off" required>
+<label style="text-align:left">Parol</label><input id="lp" type="password" autocomplete="current-password" required>
+<div id="lerr"></div><button class="pri" style="margin-top:4px">Kirish</button></form></div>
+
+<main id="app" class="hide">
+<header><div class="brand-symbol">✦</div><button class="ib hide" id="back">←</button><h1 id="ttl">🧮 MAKHMUDOV NEXUS PRO</h1><button class="ib" id="th" title="Mavzuni almashtirish">◐</button><button class="ib logout" id="lo">↪ Chiqish</button></header>
+
+<div id="home"><div class="hero"><div><div class="eyebrow">YOUR INTELLIGENT WORKSPACE</div><h2>Hisoblashning <em>yangi darajasi.</em></h2><p>Matematika, moliya, geometriya va kundalik hisob-kitoblar — hammasi bitta joyda.</p></div><div class="hero-mark">∑<small>NEXUS</small></div></div><div class="section-head"><div><div class="eyebrow">EXPLORE TOOLS</div><h3>Asboblar kutubxonasi</h3></div><span class="pill">⚡ 30+ tools</span></div><input id="q" placeholder="🔍 Funksiya qidirish..."><div class="chips" id="chips"></div><div id="grid"></div><p class="sm" id="cnt"></p></div>
+
+<section id="calc" class="card hide"><div id="hist"></div><input id="inp" placeholder="Masalan: 2+3*sin(30), sqrt(144), 5!" autocomplete="off">
+<div id="err"></div><div id="out">0</div>
+<div class="row" style="margin-top:6px"><button class="btn" id="deg">Daraja (DEG)</button><span class="sm">Trigonometriya birligi</span></div><div class="keys" id="keys"></div></section>
+
+<section id="graf" class="card hide">
+<div class="row"><i class="dot" style="background:#4f46e5"></i><input class="fn" value="sin(x)"></div>
+<div class="row" style="margin-top:6px"><i class="dot" style="background:#e11d48"></i><input class="fn" value="x^2/4"></div>
+<div class="row" style="margin-top:6px"><i class="dot" style="background:#16a34a"></i><input class="fn" placeholder="f(x) (ixtiyoriy)"></div>
+<canvas id="cv"></canvas><div class="row" style="margin-top:8px"><button class="btn" id="zi">＋</button><button class="btn" id="zo">－</button><button class="btn" id="zr">Boshlangʻich</button></div>
+<p class="sm">Surib siljiting, gʻildirak bilan kattalashtiring. sin, cos, tan, sqrt, abs, log, exp, ^</p></section>
+
+<section id="conv" class="card hide"><label>Kategoriya</label><select id="cat"></select><label>Qiymat</label><input id="cv1" type="number" value="1" step="any">
+<div class="row"><div><label>Qayerdan</label><select id="u1"></select></div><div><label>Qayerga</label><select id="u2"></select></div></div><div class="res" id="cres"></div></section>
+
+<section id="tool" class="card hide"><div id="tf"></div><div class="res" id="tr"></div><p class="sm" id="tn"></p></section>
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/12.4.1/math.min.js"></script>
+<script src="app.js"></script></body></html>
